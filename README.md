@@ -1,6 +1,8 @@
-# Icloud::Reader
+# The iCloud Reader
 
-TODO: Write a gem description
+Want to use your iCloud accounts with a third-party app (like your android phone or Thunderbird Lightning)? Well, here's a simple tool to figure out what your URLs are. 
+
+This is just a rewrite, in Ruby, of http://icloud.niftyside.com/. Props go there for the original.
 
 ## Installation
 
@@ -18,7 +20,20 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+The command is `icloud-reader`
+
+Without any args:
+
+Usage:
+    [] [OPTIONS] SUBCOMMAND [ARGS] ...
+
+Subcommands:
+    calendars                     list the calendars and their URLs (as YAML)
+    contacts                      get your CardDAV url
+
+Options:
+    -s, --server-number SERVER_NUMBER the number of the server to use
+    -h, --help                    print help
 
 ## Contributing
 
